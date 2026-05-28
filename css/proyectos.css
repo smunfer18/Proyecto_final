@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    background: linear-gradient(to right, rgb(104, 111, 241), rgb(219, 181, 246));
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background:  rgb(0, 12, 120);
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0; 
+    z-index: 1000;
+    
+}
+
+.titulo img{
+    height: 80px;
+    width: 90px;
+}
+
+.menu {
+  display: block;
+  position: relative;
+  height: 76px;
+  width: 120px;
+  margin: 0;
+  overflow: hidden;
+  
+}
+
+
+
+.menu.inicio {
+  border-top: #8900cd 0.3em solid;
+}
+
+
+
+.menu.proyectos {
+  border-top: #6f00ff 0.3em solid;
+}
+
+.menu.contactar {
+  border-top: #00a6ff 0.3em solid;
+}
+
+.menu > span {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 0%;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+}
+
+.menu:after, .menu > span > span {
+  display: block;
+  text-align: center;
+  border-radius: 0em;
+  padding: 2em 0 1.5em;
+}
+
+.menu:after {
+  content: attr(data-title);
+  width: 100%;
+ background: rgb(0, 12, 120);
+  color: #fff; 
+}
+
+.menu > span > span {
+  width: 120px;
+  color: #fff;
+}
+
+.menu.inicio > span > span {
+  background: #8900cd;
+}
+
+.menu.proyectos > span > span {
+  background: #6f00ff;
+}
+
+
+
+.menu.contactar > span > span {
+    background: #00a6ff;
+}
+
+.menu:hover > span {
+    height: 100%; 
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+}
+
+li a {
+  display: inline;
+  float: left;
+  text-decoration: none;
+  font-family: sans;
+}
+.productos{
+   
+    margin: 0 auto;
+    height: 50% ;
+    width: 95%;
+    
+    text-align: center;
+    padding: 5%;
+
+     
+}
+
+.productos h1{
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(2, 5, 53);
+    margin-bottom: 30px;
+}
+
+.cajas{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.producto{
+    
+    background-color: rgb(6, 13, 100);
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    
+    box-sizing: border-box;
+}
+
+.producto img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.producto > h3{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    padding-top: 2%;
+    color: rgb(139, 251, 255);
+    text-align: center;
+    margin-bottom: 10px;
+}
+.producto > p{
+    padding-top: 2%;
+    color: aliceblue;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.producto-pie{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+}
+
+.producto-pie button{
+    color: white;
+    font-weight: bold;
+    background-color: rgb(4, 0, 255);
+    border-radius: 7px;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.producto-pie button:hover{
+    color: rgb(5, 103, 168);
+    background-color: rgb(195, 130, 248);
+}
+
+
+footer{
+    color: rgba(255, 255, 255, 0.512);
+    background: linear-gradient(to right, rgb(2, 8, 129), rgb(70, 1, 119));
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    margin-top: 40px;
+}
+
+footer .redes{
+    width: 80px;
+    height: 40px;
+}
+
+footer .redes img{
+    width: 35px;
+    height: 90%;
+    
+}
