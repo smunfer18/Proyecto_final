@@ -18,12 +18,11 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
     padding: 0; 
     z-index: 1000;
     width: 100%; 
-    box-sizing: border-box;
- 
-   
+     
 }
 
 .titulo img{
@@ -37,16 +36,13 @@ header{
   height: 76px;
   width: 120px;
   margin: 0;
+
   overflow: hidden;
 }
-
-
 
 .menu.inicio {
   border-top: #8900cd 0.3em solid;
 }
-
-
 
 .menu.proyectos {
   border-top: #6f00ff 0.3em solid;
@@ -95,8 +91,6 @@ header{
   background: #6f00ff;
 }
 
-
-
 .menu.contactar > span > span {
     background: #00a6ff;
 }
@@ -104,7 +98,16 @@ header{
 .menu:hover > span {
     height: 100%; 
 }
-
+.navbar {
+    flex: 1;
+}
+.navbar-collapse {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: auto;
+    right: 0;
+    width: auto;
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -118,12 +121,6 @@ li a {
   text-decoration: none;
   font-family: sans;
 }
-
-
-
-
-
-
 
 .info{   
     display: flex;

@@ -101,7 +101,16 @@ header{
 .menu:hover > span {
     height: 100%; 
 }
-
+.navbar {
+    flex: 1;
+}
+.navbar-collapse {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: auto;
+    right: 0;
+    width: auto;
+}
 ul {
     list-style-type: none;
     margin: 0;
